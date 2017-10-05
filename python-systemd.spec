@@ -4,12 +4,13 @@
 #
 Name     : python-systemd
 Version  : 234
-Release  : 1
+Release  : 2
 URL      : https://github.com/systemd/python-systemd/archive/v234.tar.gz
 Source0  : https://github.com/systemd/python-systemd/archive/v234.tar.gz
 Summary  : No detailed summary available
 Group    : Development/Tools
 License  : LGPL-2.1
+Requires: python-systemd-python3
 Requires: python-systemd-python
 BuildRequires : pbr
 BuildRequires : pip
@@ -35,9 +36,19 @@ and available seats and machines.
 %package python
 Summary: python components for the python-systemd package.
 Group: Default
+Requires: python-systemd-python3
 
 %description python
 python components for the python-systemd package.
+
+
+%package python3
+Summary: python3 components for the python-systemd package.
+Group: Default
+Requires: python3-core
+
+%description python3
+python3 components for the python-systemd package.
 
 
 %prep
@@ -48,7 +59,7 @@ export http_proxy=http://127.0.0.1:9/
 export https_proxy=http://127.0.0.1:9/
 export no_proxy=localhost,127.0.0.1,0.0.0.0
 export LANG=C
-export SOURCE_DATE_EPOCH=1505687260
+export SOURCE_DATE_EPOCH=1507170426
 python3 setup.py build -b py3
 
 %install
@@ -62,5 +73,8 @@ echo ----[ mark ]----
 %defattr(-,root,root,-)
 
 %files python
+%defattr(-,root,root,-)
+
+%files python3
 %defattr(-,root,root,-)
 /usr/lib/python3*/*
