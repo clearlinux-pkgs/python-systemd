@@ -4,7 +4,7 @@
 #
 Name     : python-systemd
 Version  : 234
-Release  : 5
+Release  : 6
 URL      : https://github.com/systemd/python-systemd/archive/v234.tar.gz
 Source0  : https://github.com/systemd/python-systemd/archive/v234.tar.gz
 Summary  : No detailed summary available
