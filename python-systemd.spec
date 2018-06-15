@@ -15,7 +15,7 @@ Requires: python-systemd-python
 BuildRequires : pbr
 BuildRequires : pip
 BuildRequires : pkgconfig(libsystemd)
-BuildRequires : python-dev
+
 BuildRequires : python3-dev
 BuildRequires : setuptools
 
