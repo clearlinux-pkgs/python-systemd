@@ -4,7 +4,7 @@
 #
 Name     : python-systemd
 Version  : 234
-Release  : 22
+Release  : 23
 URL      : https://github.com/systemd/python-systemd/archive/v234.tar.gz
 Source0  : https://github.com/systemd/python-systemd/archive/v234.tar.gz
 Summary  : Python bindings for systemd
