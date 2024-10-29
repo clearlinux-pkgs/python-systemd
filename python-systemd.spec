@@ -7,7 +7,7 @@
 #
 Name     : python-systemd
 Version  : 235
-Release  : 37
+Release  : 38
 URL      : https://github.com/systemd/python-systemd/archive/v235/python-systemd-235.tar.gz
 Source0  : https://github.com/systemd/python-systemd/archive/v235/python-systemd-235.tar.gz
 Summary  : Systemd interfaces wrapper
